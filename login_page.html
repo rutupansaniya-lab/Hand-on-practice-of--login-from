@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}  
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 25%;
+    left:51%;
+    transform: translate(-50%, -50%);     
+    width: 400px;
+    margin-bottom: 40px;
+    font-size: larger;
+}
+.centered-div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;        
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: mett vergotiser;
+}
+#submit {
+    display: block;
+    margin: 0 auto;
+    background-image: url('upload-removebg-preview.png');
+    background-size: contain;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-position: center;
+
+}
+#email-field {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url('email.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 40px;
+}
+#password-field {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url('unlock.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 40px;
+}
+
+#login-text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+ 
+}   
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+}
+</style>
+<body>
+    <header>
+        <h1> <em>Modish Login Form</em></h1>
+    </header>
+    <div class="centered-div">  
+        <h1 id="login-text" style="color: white;"><center>  Login Here  </center></h1>
+        <form action="login.html" method="post">
+
+        <label for="email-field"></label>
+        <input type="email" id="email-field" name="email" placeholder="Email"/> <br><br>
+
+        <label for="password-field"></label>
+        <input type="password" id="password-field" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*)." required/> <br><br>
+
+        <button type="submit" id="submit" src="upload-removebg-preview.png"></button>  
+
+        </form>
+    </div>
+    <footer>    
+        <p style="color: white; text-align: center;">&copy; 2018 Modish Login Form. All rights reserved | Designed by <span style="color: red;">W3layouts</span></p>
+    </footer>
+</body>
+</html> 
